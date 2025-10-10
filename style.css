@@ -161,10 +161,12 @@ header a:active{
     background-position: center center;
     background-size: cover;
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 15px;
     height: 300px;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
 #Servicios .carta:first-child{
@@ -232,11 +234,13 @@ header a:active{
 #Blog .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 12px;
+    padding: 20px;
+    margin: 10px auto;
     border-radius: 15px;
     height: 300px;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
 #Blog .carta:first-child{
@@ -316,6 +320,9 @@ footer .container{
     justify-content: center;
     align-items: flex-end;
 }
+
+
+
 
 @media (min-width: 720px){
     header{
