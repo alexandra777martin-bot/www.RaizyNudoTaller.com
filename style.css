@@ -620,4 +620,160 @@ footer .container{
     font-size: 0.9em;
     text-align: center;
   }
+  /* === OPTIMIZACIÓN MÓVIL === */
+@media (max-width: 720px) {
+
+  header {
+    position: relative;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  header a {
+    padding: 8px;
+    font-size: 1.1em;
+  }
+
+  /* Banner */
+  #hero {
+    height: 60vh;
+    padding-top: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #hero button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+
+  /* Portafolio */
+  .portafolio h2 {
+    font-size: 2.2em;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Sobre Nosotros */
+  #Sobre-Nosotros .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #Sobre-Nosotros .texto {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #Sobre-Nosotros .img-container {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto 20px;
+  }
+
+  /* Servicios */
+  #Servicios .Servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Servicios .carta {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 30px;
+  }
+
+  #Servicios h2 {
+    font-size: 2.5em;
+  }
+
+  /* El Proceso */
+  #el-proceso .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #el-proceso .textlist {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #el-proceso .img-container {
+    width: 90%;
+    height: 250px;
+    margin: 20px auto 0;
+  }
+
+  /* Blog */
+  #Blog .Blog {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Blog .carta {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 30px;
+  }
+
+  #Blog h2 {
+    font-size: 2.5em;
+  }
+
+  /* Contacto */
+  #Contacto .container {
+    padding: 20px;
+  }
+
+  #Contacto ul {
+    padding: 0;
+  }
+
+  #Contacto li {
+    font-size: 1em;
+  }
+
+  #Contacto form {
+    width: 90%;
+    margin: auto;
+  }
+
+  #Contacto textarea,
+  #Contacto button {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.9em;
+    text-align: center;
+  }
 }
+
+}
+
