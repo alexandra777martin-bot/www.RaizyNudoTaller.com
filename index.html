@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estilos En Tendencia</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Raíz y Nudo Taller</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Encabezado -->
   <header>
     <div class="container">
-      <h1>Estilos En Tendencia</h1>
+      <p class="logo">Raíz y Nudo Taller</p>
       <nav>
         <a href="#hero">Inicio</a>
+        <a href="#portafolio">Portafolio</a>
         <a href="#Sobre-Nosotros">Sobre Nosotros</a>
         <a href="#Servicios">Servicios</a>
         <a href="#el-proceso">El Proceso</a>
-        <a href="#portafolio">Portafolio</a>
         <a href="#Blog">Blog</a>
         <a href="#Contacto">Contacto</a>
       </nav>
@@ -25,18 +24,46 @@
   </header>
 
   <!-- Banner -->
-  <section id="hero" style="background-image: url('recortes/banner-web.jpg');">
-    <h2>Diseños a tu medida</h2>
-    <button>Explorar Servicios</button>
+  <section id="hero">
+    <a href="#formulario">
+      <button>Haz tu pedido</button>
+    </a>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio" class="portafolio">
+    <h2>Portafolio</h2>
+    <div class="galeria">
+      <div class="card">
+        <img src="galeria/mesas/mesa-sala.jpg" alt="Mesa">
+        <h3>Mesas</h3>
+        <p>Piezas únicas que combinan funcionalidad y diseño artesanal.</p>
+      </div>
+      <div class="card">
+        <img src="galeria/sillas/MUEBLE-DE-SILA-MADERA.jpg" alt="Silla">
+        <h3>Sillas</h3>
+        <p>Comodidad y estilo hechos a mano, con acabados de alta calidad.</p>
+      </div>
+      <div class="card">
+        <img src="galeria/repisas/repisas.jpg" alt="Repisas">
+        <h3>Repisas</h3>
+        <p>Diseños elegantes y prácticos para tu hogar u oficina.</p>
+      </div>
+      <div class="card">
+        <img src="galeria/escritorios/escritorios.jpg" alt="Escritorio">
+        <h3>Escritorios</h3>
+        <p>Hechos a medida para inspirar productividad y confort.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Sobre Nosotros -->
   <section id="Sobre-Nosotros">
     <div class="container">
-      <div class="img-container" style="background-image: url('recortes/muebles.jpg');"></div>
+      <div class="img-container"></div>
       <div class="texto">
         <h2>Sobre Nosotros</h2>
-        <p>Nos especializamos en la creación y restauración de muebles artesanales, combinando diseño, calidad y pasión por los detalles.</p>
+        <p>En Raíz & Nudo Taller, transformamos la madera en piezas con historia. Cada mueble honra la belleza natural del material.</p>
       </div>
     </div>
   </section>
@@ -45,53 +72,47 @@
   <section id="Servicios">
     <h2>Servicios</h2>
     <div class="Servicios">
-      <div class="carta" style="background-image: url('recortes/muebles.jpg');">
-        <h3>Muebles Personalizados</h3>
-        <p>Diseñamos y fabricamos muebles únicos adaptados a tu estilo y espacio.</p>
-        <button>Ver Más</button>
+      <div class="carta">
+        <h3>Muebles</h3>
+        <p>Diseños únicos, funcionales y duraderos hechos a mano.</p>
+        <button>Más Información</button>
       </div>
-      <div class="carta" style="background-image: url('recortes/restauracion.jpg');">
+      <div class="carta">
         <h3>Restauración</h3>
-        <p>Devolvemos la vida a tus muebles antiguos manteniendo su esencia original.</p>
-        <button>Ver Más</button>
+        <p>Recuperamos la esencia y belleza de tus muebles antiguos.</p>
+        <button>Más Información</button>
       </div>
-      <div class="carta" style="background-image: url('recortes/decoraciones.jpg');">
-        <h3>Decoraciones</h3>
-        <p>Complementos únicos para darle ese toque especial a tus espacios.</p>
-        <button>Ver Más</button>
+      <div class="carta">
+        <h3>Objetos Decorativos</h3>
+        <p>Detalles en madera que aportan estilo y personalidad.</p>
+        <button>Más Información</button>
       </div>
-      <div class="carta" style="background-image: url('recortes/formulario.jpg');">
-        <h3>Solicita tu Cotización</h3>
-        <p>Cuéntanos tu idea y te ayudamos a hacerla realidad.</p>
-        <button>Enviar Cotización</button>
+      <div class="carta">
+        <h3>Cotizaciones</h3>
+        <p>Solicita tu cotización personalizada y haz realidad tus ideas.</p>
+        <button>Más Información</button>
       </div>
     </div>
   </section>
 
   <!-- El Proceso -->
   <section id="el-proceso">
-    <h2>El Proceso</h2>
-    <div class="content-wrapper">
-      <div class="textlist">
-        <p>1️⃣ Diseño personalizado según tus ideas.</p>
-        <p>2️⃣ Selección de materiales de alta calidad.</p>
-        <p>3️⃣ Fabricación artesanal y detallada.</p>
-        <p>4️⃣ Entrega con garantía y satisfacción.</p>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="textlist">
+          <h2>El Proceso</h2>
+          <ul>
+            <li>🌳 Selección de la Madera</li>
+            <li>✏️ Diseño Personalizado</li>
+            <li>🪚 Preparación y Corte</li>
+            <li>🔗 Ensamblaje Artesanal</li>
+            <li>🪵 Lijado y Detalle</li>
+            <li>✨ Acabado Final</li>
+            <li>🏡 Entrega y Conexión</li>
+          </ul>
+        </div>
+        <div class="img-container"></div>
       </div>
-      <div class="img-container" style="background-image: url('recortes/proceso.jpg');"></div>
-    </div>
-  </section>
-
-  <!-- Portafolio -->
-  <section id="portafolio" class="portafolio">
-    <h2>Portafolio</h2>
-    <div class="galeria">
-      <div class="card"><img src="galeria/1.jpg" alt="Proyecto 1"></div>
-      <div class="card"><img src="galeria/2.jpg" alt="Proyecto 2"></div>
-      <div class="card"><img src="galeria/3.jpg" alt="Proyecto 3"></div>
-      <div class="card"><img src="galeria/4.jpg" alt="Proyecto 4"></div>
-      <div class="card"><img src="galeria/5.jpg" alt="Proyecto 5"></div>
-      <div class="card"><img src="galeria/6.jpg" alt="Proyecto 6"></div>
     </div>
   </section>
 
@@ -99,46 +120,60 @@
   <section id="Blog">
     <h2>Blog</h2>
     <div class="Blog">
-      <div class="carta" style="background-image: url('recortes/blog1.jpg');">
-        <h3>Tendencias en Diseño</h3>
-        <p>Descubre las últimas novedades en diseño de interiores y mobiliario artesanal.</p>
-        <button>Leer Más</button>
+      <div class="carta">
+        <h3>Cuidado de la Madera</h3>
+        <p>Consejos prácticos para mantener tus muebles hermosos.</p>
+        <button>Más Información</button>
       </div>
-      <div class="carta" style="background-image: url('recortes/blog2.jpg');">
-        <h3>Cuidados del Mueble</h3>
-        <p>Consejos prácticos para mantener tus muebles como nuevos por más tiempo.</p>
-        <button>Leer Más</button>
+      <div class="carta">
+        <h3>Historias de la Madera</h3>
+        <p>Conoce el legado artesanal detrás de cada pieza.</p>
+        <button>Más Información</button>
       </div>
-      <div class="carta" style="background-image: url('recortes/blog3.jpg');">
-        <h3>Decoración Sostenible</h3>
-        <p>Aprende a decorar tu hogar con materiales naturales y responsables.</p>
-        <button>Leer Más</button>
+      <div class="carta">
+        <h3>Inspiración de Diseños</h3>
+        <p>Ideas para tus próximos proyectos de madera.</p>
+        <button>Más Información</button>
+      </div>
+      <div class="carta">
+        <h3>Detrás del Taller</h3>
+        <p>Descubre el proceso artesanal de principio a fin.</p>
+        <button>Más Información</button>
       </div>
     </div>
   </section>
 
   <!-- Contacto -->
   <section id="Contacto">
-    <h2>Contacto</h2>
     <div class="container">
+      <h2>Contacto</h2>
       <ul>
-        <li>📍 Dirección: Calle 123, Ciudad</li>
-        <li>📞 Teléfono: +57 300 123 4567</li>
-        <li>📧 Correo: contacto@estilosentendencia.com</li>
+        <li>Dirección: Calle 12 #45-67, Bogotá, Colombia</li>
+        <li>Teléfono/Whatsapp: +57 320 456 7890</li>
+        <li>Correo: contactoraizynudotaller@gmail.com</li>
+        <li>Horario: Lunes a Viernes 9am–6pm / Sábado 9am–1pm</li>
       </ul>
 
+      <h2 id="formulario">Solicita tu cotización</h2>
       <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <textarea placeholder="Mensaje" rows="4" required></textarea>
+        <label for="nombre">Nombre:</label>
+        <textarea id="nombre" name="nombre" rows="2"></textarea>
+
+        <label for="email">Correo:</label>
+        <textarea id="email" name="email" rows="2"></textarea>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
         <button type="submit">Enviar Cotización</button>
       </form>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Estilos En Tendencia | Todos los derechos reservados</p>
+    <div class="container">
+      <p>&copy; Raíz y Nudo Taller 2025</p>
+    </div>
   </footer>
 
 </body>
