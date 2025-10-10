@@ -1,214 +1,206 @@
-/* --- RESETEO GENERAL --- */
+/* === ESTILOS GENERALES === */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+  background-color: #f2e4d5;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* --- TIPOGRAFÍAS Y TEXTOS --- */
-h1 { font-size: 3.5em; }
-h2 { font-size: 2.7em; }
-h3 { font-size: 2em; }
-p { font-size: 1.1em; }
-ul { list-style: none; }
-li { font-size: 1.1em; }
+/* === ENCABEZADO / NAV === */
+header {
+  background-color: #5c2e0c;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
 
-/* --- BOTONES --- */
-button {
-  font-size: 1.2em;
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* === BOTONES GENERALES === */
+button,
+input[type="submit"] {
+  font-size: 1.1em;
   font-weight: bold;
   padding: 10px 25px;
-  border-radius: 10px;
-  border: 1px solid #333;
-  box-shadow: 0 2px 4px #333;
-  color: #fff;
+  border-radius: 8px;
+  border: none;
   background-color: #D2691E;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
-button:hover {
+
+button:hover,
+input[type="submit"]:hover {
   background-color: #a85d1e;
+  transform: scale(1.05);
 }
 
-/* --- ENCABEZADO --- */
-header {
-  background-color: #5C4033;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-header .logo {
-  margin: 0;
-  padding: 10px 30px;
-  font-weight: bold;
-  color: #fff;
-  font-size: 1.5em;
-}
-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 15px;
-}
-header a {
-  padding: 5px 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-}
-header a:hover {
-  color: bisque;
-}
-
-/* --- HERO --- */
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 75vh;
-  margin-top: 90px;
-  background-image: url("recortes/Banner-web.jpg");
+/* === SECCIÓN INICIO === */
+#inicio {
+  background-image: url("recortes/inicio.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* --- PORTAFOLIO --- */
-.portafolio {
-  background-color: #8B4513;
-  text-align: center;
-  padding: 40px 10px;
-}
-.portafolio h2 {
-  color: #fff;
-  font-size: 2.7em;
-  margin-bottom: 30px;
-}
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.card {
-  background-color: #556B2F;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px #333;
-  padding: 10px;
-}
-.card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 10px;
-}
-.card h3 {
-  color: #fff;
-  margin: 10px 0 5px;
-  font-size: 1.4em;
-}
-.card p {
-  color: #fff;
-}
-
-/* --- SOBRE NOSOTROS --- */
-#Sobre-Nosotros .container {
-  background-color: #556B2F;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#Sobre-Nosotros .texto {
-  max-width: 700px;
-}
-#Sobre-Nosotros .img-container {
-  background-image: url("recortes/somosraiz.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 400px;
-  height: 300px;
-  margin-top: 20px;
+  padding: 120px 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* --- SERVICIOS --- */
+#inicio h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+#inicio p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.2em;
+}
+
+/* === SECCIÓN SERVICIOS === */
 #Servicios {
   background-color: #8B4513;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
+
 #Servicios h2 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-size: 2.8em;
 }
+
 #Servicios .Servicios {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-#Servicios .carta {
-  border-radius: 15px;
-  padding: 40px 20px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 2px 4px #333;
-  min-height: 300px;
-  transition: transform 0.3s;
-}
-#Servicios .carta:hover {
-  transform: scale(1.03);
-}
-#Servicios .carta:first-child {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("recortes/muebles.jpg");
-}
-#Servicios .carta:nth-child(2) {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("recortes/restauracion.jpg");
-}
-#Servicios .carta:nth-child(3) {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("recortes/decoraciones.jpg");
-}
-#Servicios .carta:nth-child(4) {
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("recortes/formulario.jpg");
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* --- EL PROCESO --- */
+#Servicios .carta {
+  position: relative;
+  border-radius: 15px;
+  padding: 40px 20px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#Servicios .carta:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+/* Fondos de cada carta */
+#Servicios .carta:nth-child(1) {
+  background-image: url("recortes/muebles.jpg");
+}
+#Servicios .carta:nth-child(2) {
+  background-image: url("recortes/restauracion.jpg");
+}
+#Servicios .carta:nth-child(3) {
+  background-image: url("recortes/decoraciones.jpg");
+}
+#Servicios .carta:nth-child(4) {
+  background-image: url("recortes/formulario.jpg");
+}
+
+/* Capa oscura */
+#Servicios .carta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+#Servicios .carta h3,
+#Servicios .carta p,
+#Servicios .carta button {
+  position: relative;
+  z-index: 1;
+}
+
+#Servicios .carta button {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#Servicios .carta button:hover {
+  background-color: #fff;
+  transform: scale(1.08);
+}
+
+/* === SECCIÓN EL PROCESO === */
 #el-proceso {
   background-color: #556B2F;
   color: #fff;
-  padding: 40px 20px;
+  text-align: center;
+  padding: 60px 20px;
 }
+
+#el-proceso h2 {
+  margin-bottom: 30px;
+  font-size: 2.8em;
+}
+
 #el-proceso .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-#el-proceso ul {
-  list-style: none;
-  padding-left: 0;
-}
-#el-proceso li {
-  margin: 10px 0;
-  font-weight: bold;
-}
+
 #el-proceso .img-container {
+  position: relative;
   background-image: url("recortes/proceso.jpg");
   background-size: cover;
   background-position: center;
@@ -216,97 +208,163 @@ header a:hover {
   width: 100%;
   max-width: 400px;
   height: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  overflow: hidden;
 }
 
-/* --- BLOG --- */
+#el-proceso .img-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+#el-proceso ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#el-proceso li {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* === SECCIÓN BLOG === */
 #Blog {
   background-color: #8B4513;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
+
+#Blog h2 {
+  margin-bottom: 40px;
+  font-size: 2.8em;
+}
+
 #Blog .Blog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-#Blog .carta {
-  border-radius: 15px;
-  padding: 40px 20px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 2px 4px #333;
-  min-height: 300px;
-}
-#Blog .carta:first-child {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("recortes/cuidado.jpg");
-}
-#Blog .carta:nth-child(2) {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("recortes/historia.jpg");
-}
-#Blog .carta:nth-child(3) {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("recortes/inspiracion.jpg");
-}
-#Blog .carta:nth-child(4) {
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("recortes/detras.jpg");
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* --- CONTACTO --- */
-#Contacto .container {
-  background-color: #556B2F;
-  color: #fff;
-  text-align: center;
+#Blog .carta {
+  position: relative;
+  border-radius: 15px;
   padding: 40px 20px;
-}
-#Contacto form {
+  min-height: 320px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: 30px auto;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-#Contacto textarea {
+
+#Blog .carta:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+/* Imágenes del blog */
+#Blog .carta:nth-child(1) {
+  background-image: url("recortes/cuidado.jpg");
+}
+#Blog .carta:nth-child(2) {
+  background-image: url("recortes/historia.jpg");
+}
+#Blog .carta:nth-child(3) {
+  background-image: url("recortes/inspiracion.jpg");
+}
+#Blog .carta:nth-child(4) {
+  background-image: url("recortes/detras.jpg");
+}
+
+/* Capa oscura */
+#Blog .carta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+#Blog .carta h3,
+#Blog .carta p,
+#Blog .carta button {
+  position: relative;
+  z-index: 1;
+}
+
+#Blog .carta button {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#Blog .carta button:hover {
+  background-color: #fff;
+  transform: scale(1.08);
+}
+
+/* === SECCIÓN CONTACTO / COTIZACIÓN === */
+#contacto {
+  background-color: #5c2e0c;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contacto input,
+#contacto textarea {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: none;
-  resize: vertical;
+  font-size: 1em;
 }
 
-/* --- FOOTER --- */
+#contacto textarea {
+  resize: none;
+  height: 120px;
+}
+
+/* === PIE DE PÁGINA === */
 footer {
-  background-color: #fff;
-  color: #444;
+  background-color: #3b1d0a;
+  color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px;
+  font-size: 0.9em;
 }
 
-/* --- RESPONSIVE --- */
+/* === RESPONSIVE === */
 @media (min-width: 768px) {
-  header .container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header nav {
-    flex-direction: row;
-    padding: 0;
-  }
-  #Sobre-Nosotros .container {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  #Sobre-Nosotros .texto {
-    width: 50%;
-    text-align: left;
-  }
   #el-proceso .container {
     flex-direction: row;
     justify-content: center;
+    gap: 60px;
+    text-align: left;
   }
-}
-
-@media (min-width: 1024px) {
-  h2 { font-size: 3em; }
-  .galeria { grid-template-columns: repeat(3, 1fr); }
-  #Servicios .Servicios, #Blog .Blog { grid-template-columns: repeat(4, 1fr); }
 }
